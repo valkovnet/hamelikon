@@ -20,8 +20,13 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    void InvokeTest();
+
+private slots:
+    void on_btnInvoke_clicked();
+
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow *ui;    
 };
 
 #endif // MAINWINDOW_H
